@@ -77,18 +77,21 @@ header span {
     header nav ul{
         display: flex;
         justify-content: space-evenly;
+        height: 50px;
     }
 
-    header nav ul li a{
+    header nav ul li{
         padding: 20px;
         color: white;
         font-size: 1.5em;
         transition: .5s;
+        cursor: pointer;
     }
 
-    header nav ul li a:hover{
+    header nav ul li:hover{
         color: rgb(232, 141, 220);
         transition: .5s;
+        cursor: pointer;
     }
 
 main {
@@ -224,17 +227,20 @@ main {
 
     .container-tecnologias .image-tecno .imagen {
         padding: auto;
+        transition: .5s;
     }
 
     .container-tecnologias .image-tecno .nombre {
         font-weight: 100;
         opacity: 0;
         padding: auto;
+        transition: .5s;
     }
 
     .container-tecnologias .image-tecno div:hover .nombre, .container-tecnologias .image-tecno div:hover .imagen{
         filter: drop-shadow(0 0 10px var(--colorRosa));
         opacity: 1;
+        transition: .5s;
     }
 
 .container-proyectos {
@@ -305,8 +311,37 @@ main {
             margin: 20px;
             display: inline-block;
             height: 50px;
+            transition: .5s;
         }
 
+        .container-contacto div a:hover {
+            filter: drop-shadow(0 0 10px var(--colorRosa));
+            transition: .5s;
+        }
+
+
+/* boton subir */
+#btn-para-arriba {
+    position: fixed;
+    bottom: 20px; /* Espacio desde el borde inferior */
+    right: 20px; /* Espacio desde el borde derecho */
+    border-radius: 50%;
+    background-color: var(--colorRosa);
+    color: var(--colorHeader);
+    cursor: pointer;
+    font-size: 4em;
+    z-index: 1000; /* Asegura que esté sobre otros elementos */
+    width: auto;
+    height: auto;
+    transition: .5s;
+}
+
+    #btn-para-arriba:hover {
+        filter: drop-shadow(0 0 10px var(--colorRosa));
+        transition: .5s;
+    }
+
+        
 .footer {
     width: 100%;
     height: auto;
