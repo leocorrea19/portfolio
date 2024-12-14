@@ -22,5 +22,5 @@ document.getElementById('proyectos').addEventListener('click', function() {
 
 /* BOTON CONTACTO */
 document.getElementById('contacto').addEventListener('click', function() {
-    window.scrollTo({ top: 9000, behavior: 'smooth' });
+    window.scrollTo({ top: 3700, behavior: 'smooth' });
 });
