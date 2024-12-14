@@ -12,12 +12,12 @@ document.getElementById('educacion').addEventListener('click', function() {
 
 /* BOTON TECNOLOGIAS */
 document.getElementById('tecnologias').addEventListener('click', function() {
-    window.scrollTo({ top: 1500, behavior: 'smooth' });
+    window.scrollTo({ top: 1800, behavior: 'smooth' });
 });
 
 /* BOTON PROYECTOS */
 document.getElementById('proyectos').addEventListener('click', function() {
-    window.scrollTo({ top: 2300, behavior: 'smooth' });
+    window.scrollTo({ top: 2700, behavior: 'smooth' });
 });
 
 /* BOTON CONTACTO */
