@@ -233,13 +233,13 @@ main {
             background-color: var(--colorHeader);
             display: flex;
             justify-content: center;
-            width: 90%;
-            height: 50%;
+            width: auto;
+            height: auto;
             overflow: hidden;
         }
 
         .container-proyectos .proyecto p{
-            font-size: 1em;
+            font-size: .8em;
             padding-left: 20px;
             text-align: start;
         }
@@ -523,18 +523,18 @@ main {
                 background-color: var(--colorHeader);
                 display: flex;
                 justify-content: center;
-                width: 500px;
-                height: 200px;
+                width: 80%;
+                height: auto;
                 overflow: hidden;
             }
 
             .container-proyectos .proyecto img{
-                width: auto;
+                width: 30%;
                 height: auto;
             }
     
             .container-proyectos .proyecto p{
-                font-size: 1.2em;
+                font-size: 1em;
                 padding-left: 20px;
                 text-align: start;
             }
@@ -834,8 +834,8 @@ main {
                 background-color: var(--colorHeader);
                 display: flex;
                 justify-content: center;
-                width: 500px;
-                height: 200px;
+                width: 40%;
+                height: auto;
                 overflow: hidden;
             }
 
@@ -845,8 +845,8 @@ main {
             }
     
             .container-proyectos .proyecto p{
-                font-size: 1.2em;
-                padding-left: 20px;
+                font-size: 1.5em;
+                padding: 20px;
                 text-align: start;
             }
     

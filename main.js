@@ -25,7 +25,7 @@ function handleScreenSizeChange(event) {
     
             /* BOTON PROYECTOS */
             document.getElementById('proyectos').addEventListener('click', function() {
-                window.scrollTo({ top: 3100, behavior: 'smooth' });
+                window.scrollTo({ top: 3250, behavior: 'smooth' });
             });
     
             /* BOTON CONTACTO */
