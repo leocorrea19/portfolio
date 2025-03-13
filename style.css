@@ -92,51 +92,51 @@ main {
     padding: 70px 20px 20px 20px;
 }
 
-    .container-sobre-mi {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-evenly;
-        text-align: center;
-        padding: 20px;
-        margin-top: 10px;
-    }
-
-        .container-sobre-mi .image img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            filter: drop-shadow(0 0 10px var(--colorRosa));
-        }
-
-        .container-sobre-mi .image h2 {
-            font-size: 1.5em;
-            font-weight: 100;
-            padding-top: 10px;
-        }
-
-.container-sobre-mi .sobre-mi {
-    width: 100%;
-    height: auto;
+.container-sobre-mi {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
 }
 
-    .container-sobre-mi .sobre-mi h2 {
-        font-size: 1.5em;
-        font-weight: 100;
-        border-bottom: 2px solid var(--colorRosa);
-        margin-top: 20px;
+    .container-sobre-mi .image img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        filter: drop-shadow(0 0 10px var(--colorRosa));
     }
 
-    .container-sobre-mi .sobre-mi p {
+    .container-sobre-mi .image h2 {
+        font-size: 1.5em;
         font-weight: 100;
-        font-size: 1em;
-        padding-top: 20px;
+        padding-top: 10px;
     }
+
+    .container-sobre-mi .sobre-mi {
+        width: 100%;
+        height: auto;
+    }
+
+        .container-sobre-mi .sobre-mi h2 {
+            font-size: 1.5em;
+            font-weight: 100;
+            border-bottom: 2px solid var(--colorRosa);
+            margin-top: 20px;
+        }
+
+        .container-sobre-mi .sobre-mi p {
+            font-weight: 100;
+            font-size: 1em;
+            padding-top: 20px;
+        }
 
 .container-educacion {
     width: 100%;
     height: auto;
-    margin-top: 15em;
+    margin-top: 18em;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -169,7 +169,7 @@ main {
         }
 
 .container-tecnologias {
-    margin-top: 35em;
+    margin-top: 38em;
     text-align: center;
 }
 
@@ -197,7 +197,7 @@ main {
         .container-tecnologias .image-tecno .imagen {
             padding: auto;
             transition: .5s;
-            width: 4.4em;
+            width: 3.8em;
         }
 
         .container-tecnologias .image-tecno .nombre {
@@ -208,7 +208,7 @@ main {
         }
 
 .container-proyectos {
-    margin-top: 30em;
+    margin-top: 35em;
     text-align: center;
 }
 
@@ -279,6 +279,11 @@ main {
             transition: .5s;
         }
 
+            .container-contacto div a img {
+                height: 50px;
+                transition: .5s;
+            }
+
 /* boton subir */
 #btn-para-arriba {
     position: fixed;
@@ -307,6 +312,310 @@ main {
         font-weight: 100;
         padding: 2em;
     }
+
+
+@media screen and (min-width: 768px) {
+    header {
+        position: fixed;
+        width: 100%;
+        background-color: var(--colorHeader);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: 1s;
+        z-index: 9999;
+    }
+    
+        header span {
+            position: absolute;
+            display: block;
+        }
+    
+        #span1 {
+            bottom: -3px;
+            left: 100%;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, transparent,var(--colorRosa));
+            animation: animar 2s linear infinite;
+        }
+    
+            @keyframes animar {
+                from {
+                    left: -100%;
+                }
+            }
+    
+        header h1 {
+            padding-left: 20px;
+            font-size: 1.8em;
+            font-weight: 100;
+            color: white;
+        }
+    
+        header nav {
+            padding: 10px;
+            margin: 10px;
+        }
+    
+            header nav ul{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-content: center;
+                height: 40px;
+            }
+    
+                header nav ul li{
+                    padding: 8px;
+                    color: white;
+                    font-size: 1.2em;
+                    transition: .5s;
+                    cursor: pointer;
+                }
+
+    .container-sobre-mi {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+        padding: 20px;
+        margin-top: 5em;
+    }
+    
+        .container-sobre-mi .image img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            filter: drop-shadow(0 0 10px var(--colorRosa));
+        }
+    
+        .container-sobre-mi .image h2 {
+            font-size: 2em;
+            font-weight: 100;
+            padding-top: 10px;
+        }
+    
+        .container-sobre-mi .sobre-mi {
+            width: 100%;
+            height: auto;
+        }
+    
+            .container-sobre-mi .sobre-mi h2 {
+                font-size: 2em;
+                font-weight: 100;
+                border-bottom: 2px solid var(--colorRosa);
+                margin-top: 20px;
+            }
+    
+            .container-sobre-mi .sobre-mi p {
+                font-weight: 100;
+                font-size: 1.5em;
+                padding-top: 20px;
+            }
+
+    .container-educacion {
+        width: 100%;
+        height: auto;
+        margin-top: 18em;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    
+        .container-educacion .educacion-curso {
+            display: flex;
+            flex-direction: column;
+        }
+    
+            .container-educacion .educacion-curso h2 {
+                font-size: 2.8em;
+                font-weight: 100;
+                border-bottom: 3px solid var(--colorRosa);
+                text-align: center;
+            }
+        
+            .container-educacion .educacion-curso h3 {
+                font-size: 1.5em;
+                font-weight: 100;
+                padding-top: 20px;
+            }
+        
+            .container-educacion .educacion-curso ul li {
+                list-style: inside;
+                padding-left: 30px;
+                padding-top: 15px;
+            }
+
+    .container-tecnologias {
+        margin-top: 28em;
+        text-align: center;
+    }
+    
+        .container-tecnologias h2 {
+            font-size: 2.8em;
+            font-weight: 100;
+            border-bottom: 3px solid var(--colorRosa);
+            width: 50%;
+            margin-left: 25%;
+        }
+    
+        .container-tecnologias .image-tecno {
+            padding-top: 40px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 70%;
+            margin-left: 15%;
+        }
+    
+            .container-tecnologias .image-tecno div {
+                padding: 20px;
+            }
+        
+            .container-tecnologias .image-tecno .imagen {
+                padding: auto;
+                transition: .5s;
+                width: 5em;
+            }
+        
+            .container-tecnologias .image-tecno .nombre {
+                font-weight: 100;
+                /* opacity: 0; */
+                padding: auto;
+                transition: .5s;
+            }
+        
+            .container-tecnologias .image-tecno div:hover .nombre, .container-tecnologias .image-tecno div:hover .imagen{
+                filter: drop-shadow(0 0 10px var(--colorRosa));
+                opacity: 1;
+                transition: .5s;
+            }
+    
+    .container-proyectos {
+        margin-top: 25em;
+        text-align: center;
+    }
+    
+        .container-proyectos h2 {
+            font-size: 2.8em;
+            font-weight: 100;
+            border-bottom: 3px solid var(--colorRosa);
+            width: 50%;
+            margin-left: 25%;
+        }
+    
+        .container-proyectos .proyecto {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+            .container-proyectos .proyecto a {
+                color: white;
+                margin-top: 50px;
+                padding: 15px;
+                background-color: var(--colorHeader);
+                display: flex;
+                justify-content: center;
+                width: 500px;
+                height: 200px;
+                overflow: hidden;
+            }
+
+            .container-proyectos .proyecto img{
+                width: auto;
+                height: auto;
+            }
+    
+            .container-proyectos .proyecto p{
+                font-size: 1.2em;
+                padding-left: 20px;
+                text-align: start;
+            }
+    
+            .container-proyectos .proyecto a:hover {
+                filter: drop-shadow(0 0 10px var(--colorRosa));
+            }
+
+    .container-contacto {
+        margin-top: 36em;
+        margin-bottom: 0em;
+        text-align: center;
+    }
+    
+        .container-contacto h2 {
+            font-size: 2.8em;
+            font-weight: 100;
+            border-bottom: 3px solid var(--colorRosa);
+        }
+    
+        .container-contacto div {
+            padding: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: auto;
+        }
+    
+            .container-contacto div a {
+                margin: 20px;
+                display: inline-block;
+                height: 50px;
+                transition: .5s;
+            }
+    
+            .container-contacto div a:hover {
+                filter: drop-shadow(0 0 10px var(--colorRosa));
+                transition: .5s;
+            }
+
+                .container-contacto div a img {
+                    height: 60px;
+                    transition: .5s;
+                }
+
+    /* boton subir */
+    #btn-para-arriba {
+        position: fixed;
+        bottom: 20px; /* Espacio desde el borde inferior */
+        right: 20px; /* Espacio desde el borde derecho */
+        border-radius: 50%;
+        background-color: var(--colorRosa);
+        color: var(--colorHeader);
+        cursor: pointer;
+        font-size: 4em;
+        z-index: 1000; /* Asegura que esté sobre otros elementos */
+        width: auto;
+        height: auto;
+        transition: .5s;
+    }
+    
+        #btn-para-arriba:hover {
+            filter: drop-shadow(0 0 10px var(--colorRosa));
+            transition: .5s;
+        }
+    
+            
+    .footer {
+        width: 100%;
+        height: auto;
+        background-color: var(--colorHeader);
+        text-align: center;
+        margin-top: 20em;
+    }
+    
+        .footer p {
+            font-size: 1.5em;
+            font-weight: 100;
+            padding: 2em;
+        }
+}
 
 @media screen and (min-width: 1200px) {
     
@@ -365,7 +674,7 @@ main {
                 header nav ul li{
                     padding: 20px;
                     color: white;
-                    font-size: 1.5em;
+                    font-size: 1.8em;
                     transition: .5s;
                     cursor: pointer;
                 }
@@ -423,7 +732,7 @@ main {
     .container-educacion {
         width: 100%;
         height: auto;
-        margin-top: 32em;
+        margin-top: 45em;
         display: flex;
         justify-content: space-evenly;
         flex-direction: row;
@@ -455,7 +764,7 @@ main {
         }
     
     .container-tecnologias {
-        margin-top: 32em;
+        margin-top: 45em;
         text-align: center;
     }
     
@@ -476,31 +785,31 @@ main {
             margin-left: 30%;
         }
     
-        .container-tecnologias .image-tecno div {
-            padding: 20px;
-        }
-    
-        .container-tecnologias .image-tecno .imagen {
-            padding: auto;
-            transition: .5s;
-            width: 5.5em;
-        }
-    
-        .container-tecnologias .image-tecno .nombre {
-            font-weight: 100;
-            opacity: 0;
-            padding: auto;
-            transition: .5s;
-        }
-    
-        .container-tecnologias .image-tecno div:hover .nombre, .container-tecnologias .image-tecno div:hover .imagen{
-            filter: drop-shadow(0 0 10px var(--colorRosa));
-            opacity: 1;
-            transition: .5s;
-        }
+            .container-tecnologias .image-tecno div {
+                padding: 20px;
+            }
+        
+            .container-tecnologias .image-tecno .imagen {
+                padding: auto;
+                transition: .5s;
+                width: 5.5em;
+            }
+        
+            .container-tecnologias .image-tecno .nombre {
+                font-weight: 100;
+                opacity: 0;
+                padding: auto;
+                transition: .5s;
+            }
+        
+            .container-tecnologias .image-tecno div:hover .nombre, .container-tecnologias .image-tecno div:hover .imagen{
+                filter: drop-shadow(0 0 10px var(--colorRosa));
+                opacity: 1;
+                transition: .5s;
+            }
     
     .container-proyectos {
-        margin-top: 32em;
+        margin-top: 45em;
         text-align: center;
     }
     
@@ -576,6 +885,11 @@ main {
                 filter: drop-shadow(0 0 10px var(--colorRosa));
                 transition: .5s;
             }
+
+                .container-contacto div a img {
+                    height: 80px;
+                    transition: .5s;
+                }
     
     
     /* boton subir */
