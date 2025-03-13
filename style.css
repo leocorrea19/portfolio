@@ -450,6 +450,7 @@ main {
                 list-style: inside;
                 padding-left: 30px;
                 padding-top: 15px;
+                font-size: 1.2em;
             }
 
     .container-tecnologias {
@@ -744,24 +745,25 @@ main {
             flex-direction: column;
         }
     
-        .container-educacion .educacion-curso h2 {
-            font-size: 3em;
-            font-weight: 100;
-            border-bottom: 3px solid var(--colorRosa);
-            text-align: center;
-        }
-    
-        .container-educacion .educacion-curso h3 {
-            font-size: 1.5em;
-            font-weight: 100;
-            padding-top: 20px;
-        }
-    
-        .container-educacion .educacion-curso ul li {
-            list-style: inside;
-            padding-left: 30px;
-            padding-top: 10px;
-        }
+            .container-educacion .educacion-curso h2 {
+                font-size: 3em;
+                font-weight: 100;
+                border-bottom: 3px solid var(--colorRosa);
+                text-align: center;
+            }
+        
+            .container-educacion .educacion-curso h3 {
+                font-size: 2em;
+                font-weight: 100;
+                padding-top: 20px;
+            }
+        
+            .container-educacion .educacion-curso ul li {
+                list-style: inside;
+                padding-left: 30px;
+                padding-top: 10px;
+                font-size: 1.5em;
+            }
     
     .container-tecnologias {
         margin-top: 45em;
@@ -855,7 +857,7 @@ main {
             }
     
     .container-contacto {
-        margin-top: 38em;
+        margin-top: 45em;
         margin-bottom: 0em;
         text-align: center;
     }
