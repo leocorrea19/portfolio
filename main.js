@@ -15,22 +15,22 @@ function handleScreenSizeChange(event) {
     
             /* BOTON EDUCACION */
             document.getElementById('educacion').addEventListener('click', function() {
-                window.scrollTo({ top: 1000, behavior: 'smooth' });
+                window.scrollTo({ top: 1200, behavior: 'smooth' });
             });
     
             /* BOTON TECNOLOGIAS */
             document.getElementById('tecnologias').addEventListener('click', function() {
-                window.scrollTo({ top: 2050, behavior: 'smooth' });
+                window.scrollTo({ top: 2260, behavior: 'smooth' });
             });
     
             /* BOTON PROYECTOS */
             document.getElementById('proyectos').addEventListener('click', function() {
-                window.scrollTo({ top: 3250, behavior: 'smooth' });
+                window.scrollTo({ top: 3350, behavior: 'smooth' });
             });
     
             /* BOTON CONTACTO */
             document.getElementById('contacto').addEventListener('click', function() {
-                window.scrollTo({ top: 5000, behavior: 'smooth' });
+                window.scrollTo({ top: 50000, behavior: 'smooth' });
             });
     
         }

@@ -794,7 +794,7 @@ main {
             .container-tecnologias .image-tecno .imagen {
                 padding: auto;
                 transition: .5s;
-                width: 5.5em;
+                width: 4.5em;
             }
         
             .container-tecnologias .image-tecno .nombre {
@@ -836,7 +836,7 @@ main {
                 background-color: var(--colorHeader);
                 display: flex;
                 justify-content: center;
-                width: 40%;
+                width: 50%;
                 height: auto;
                 overflow: hidden;
             }
@@ -877,7 +877,7 @@ main {
         }
     
             .container-contacto div a {
-                margin: 20px;
+                margin: 30px;
                 display: inline-block;
                 height: 50px;
                 transition: .5s;
@@ -889,7 +889,7 @@ main {
             }
 
                 .container-contacto div a img {
-                    height: 80px;
+                    height: 60px;
                     transition: .5s;
                 }
     
