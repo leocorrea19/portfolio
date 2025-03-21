@@ -41,26 +41,6 @@ header {
     z-index: 9999;
 }
 
-    header span {
-        position: absolute;
-        display: block;
-    }
-
-    #span1 {
-        bottom: -3px;
-        left: 100%;
-        width: 100%;
-        height: 5px;
-        background: linear-gradient(90deg, transparent,var(--colorRosa));
-        animation: animar 2s linear infinite;
-    }
-
-        @keyframes animar {
-            from {
-                left: -100%;
-            }
-        }
-
     header h1 {
         padding-left: 20px;
         font-size: 1.4em;
@@ -218,17 +198,103 @@ main {
         border-bottom: 3px solid var(--colorRosa);
         width: 50%;
         margin-left: 25%;
+        margin-bottom: 2rem;
     }
 
     .container-proyectos .proyecto {
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
+        margin-top: 20px;
     }
+
+        .container-proyectos .proyecto span:nth-child(1) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(to right, transparent, var(--colorRosa));
+            animation: animar_1 2s linear infinite;
+        }
+
+        @keyframes animar_1 {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        .container-proyectos .proyecto span:nth-child(2) {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(to bottom, transparent, var(--colorRosa));
+            animation: animar_2 2s linear infinite;
+            animation-delay: 1s;
+        }
+    
+        @keyframes animar_2 {
+            0% {
+                transform: translateY(-100%);
+            }
+    
+            100% {
+                transform: translateY(100%);
+            }
+        }
+
+        .container-proyectos .proyecto span:nth-child(3) {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(to left, transparent, var(--colorRosa));
+            animation: animar_3 2s linear infinite;
+        }
+    
+        @keyframes animar_3 {
+            0% {
+                transform: translateX(100%);
+            }
+    
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .container-proyectos .proyecto span:nth-child(4) {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(to top, transparent, var(--colorRosa));
+            animation: animar_4 2s linear infinite;
+            animation-delay: 1s;
+        }
+    
+        @keyframes animar_4 {
+            0% {
+                transform: translateY(100%);
+            }
+    
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+
 
         .container-proyectos .proyecto a {
             color: white;
-            margin-top: 50px;
             padding: 15px;
             background-color: var(--colorHeader);
             display: flex;
@@ -327,26 +393,6 @@ main {
         transition: 1s;
         z-index: 9999;
     }
-    
-        header span {
-            position: absolute;
-            display: block;
-        }
-    
-        #span1 {
-            bottom: -3px;
-            left: 100%;
-            width: 100%;
-            height: 5px;
-            background: linear-gradient(90deg, transparent,var(--colorRosa));
-            animation: animar 2s linear infinite;
-        }
-    
-            @keyframes animar {
-                from {
-                    left: -100%;
-                }
-            }
     
         header h1 {
             padding-left: 20px;
@@ -512,19 +558,25 @@ main {
         }
     
         .container-proyectos .proyecto {
+            position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
+            margin-top: 20px;
+            width: 80%;
+            height: auto;
+            margin-left: 10%;
         }
     
             .container-proyectos .proyecto a {
                 color: white;
-                margin-top: 50px;
+                margin-top: 0;
                 padding: 15px;
                 background-color: var(--colorHeader);
                 display: flex;
                 justify-content: center;
-                width: 80%;
+                width: auto;
                 height: auto;
                 overflow: hidden;
             }
@@ -633,27 +685,6 @@ main {
         z-index: 9999;
     }
     
-        header span {
-            position: absolute;
-            display: block;
-        }
-        
-        #span1 {
-            bottom: 0;
-            left: 100%;
-            width: 100%;
-            height: 5px;
-            background: linear-gradient(90deg, transparent,var(--colorRosa));
-            animation: animar 2s linear infinite;
-        }
-    
-            @keyframes animar {
-                from {
-                    left: -100%;
-                }
-            }
-    
-    
         header h1 {
             padding-left: 30px;
             font-size: 2.8em;
@@ -737,6 +768,7 @@ main {
         display: flex;
         justify-content: space-evenly;
         flex-direction: row;
+        align-items: flex-start;
         padding: 0;
     }
     
@@ -821,22 +853,31 @@ main {
             border-bottom: 3px solid var(--colorRosa);
             width: 50%;
             margin-left: 25%;
+            margin-bottom: 3rem;
         }
     
         .container-proyectos .proyecto {
+            position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
+            margin-top: 20px;
+            width: 50%;
+            height: auto;
+            margin-left: 25%;
+            transition: .5s;
         }
-    
+
+        
             .container-proyectos .proyecto a {
                 color: white;
-                margin-top: 50px;
                 padding: 15px;
+                margin-top: 0;
                 background-color: var(--colorHeader);
                 display: flex;
                 justify-content: center;
-                width: 50%;
+                width: auto;
                 height: auto;
                 overflow: hidden;
             }
@@ -852,8 +893,9 @@ main {
                 text-align: start;
             }
     
-            .container-proyectos .proyecto a:hover {
+            .container-proyectos .proyecto:hover {
                 filter: drop-shadow(0 0 10px var(--colorRosa));
+                transition: .5s;
             }
     
     .container-contacto {
