@@ -17,7 +17,7 @@ body {
     font-family: "Jaro", Arial;
     background-color: var(--colorMain);
     color: white;
-    text-shadow: -4px 2px 2px var(--colorRosa);
+    text-shadow: -2px 2px 2px var(--colorRosa);
 }
 
 a {
@@ -78,8 +78,10 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
     margin-top: 10px;
+    background: var(--colorHeader);
+    border-radius: 20px;
 }
 
     .container-sobre-mi .image img {
@@ -428,7 +430,7 @@ main {
         flex-direction: column;
         justify-content: space-evenly;
         text-align: center;
-        padding: 20px;
+        padding: 30px;
         margin-top: 5em;
     }
     
@@ -726,7 +728,7 @@ main {
             flex-direction: row;
             justify-content: space-evenly;
             text-align: center;
-            padding: 20px;
+            padding: 30px;
             margin-top: 60px;
         }
     
