@@ -6,7 +6,7 @@ function handleScreenSizeChange(event) {
     for (const elemento of event) {
         debugger
         if (elemento.media === '(min-width: 1200px)' && elemento.matches === true) {
-            console.log("Tamaño 1200px o mas")
+            // console.log("Tamaño 1200px o mas")
     
             /* BOTON PARA VOLVER AL PRINCIPIO DE LA PAGINA - UBICADO EN LA PARTE INFERIOR DERECHA */
             document.getElementById('btn-para-arriba').addEventListener('click', function() {
@@ -20,12 +20,12 @@ function handleScreenSizeChange(event) {
     
             /* BOTON TECNOLOGIAS */
             document.getElementById('tecnologias').addEventListener('click', function() {
-                window.scrollTo({ top: 1620, behavior: 'smooth' });
+                window.scrollTo({ top: 1650, behavior: 'smooth' });
             });
     
             /* BOTON PROYECTOS */
             document.getElementById('proyectos').addEventListener('click', function() {
-                window.scrollTo({ top: 2390, behavior: 'smooth' });
+                window.scrollTo({ top: 2550, behavior: 'smooth' });
             });
     
             /* BOTON CONTACTO */
@@ -55,7 +55,7 @@ function handleScreenSizeChange(event) {
     
             /* BOTON PROYECTOS */
             document.getElementById('proyectos').addEventListener('click', function() {
-                window.scrollTo({ top: 2800, behavior: 'smooth' });
+                window.scrollTo({ top: 3000, behavior: 'smooth' });
             });
     
             /* BOTON CONTACTO */
@@ -80,12 +80,12 @@ function handleScreenSizeChange(event) {
     
             /* BOTON TECNOLOGIAS */
             document.getElementById('tecnologias').addEventListener('click', function() {
-                window.scrollTo({ top: 1380, behavior: 'smooth' });
+                window.scrollTo({ top: 1420, behavior: 'smooth' });
             });
     
             /* BOTON PROYECTOS */
             document.getElementById('proyectos').addEventListener('click', function() {
-                window.scrollTo({ top: 1980, behavior: 'smooth' });
+                window.scrollTo({ top: 2110, behavior: 'smooth' });
             });
     
             /* BOTON CONTACTO */
