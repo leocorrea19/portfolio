@@ -3,7 +3,7 @@
 :root {
     --colorHeader: #2C2C2C;
     --colorMain: #1F1F1F;
-    --colorRosa: #CC00A7;
+    --colorAzul: #2d36e5;
 }
 
 * {
@@ -17,7 +17,7 @@ body {
     font-family: "Jaro", Arial;
     background-color: var(--colorMain);
     color: white;
-    text-shadow: -2px 2px 2px var(--colorRosa);
+    text-shadow: -2px 2px 2px var(--colorAzul);
 }
 
 a {
@@ -31,6 +31,7 @@ ul {
 header {
     position: fixed;
     width: 100%;
+    height: auto;
     background-color: var(--colorHeader);
     display: flex;
     justify-content: space-between;
@@ -42,22 +43,27 @@ header {
 }
 
     header h1 {
+        padding: 10px;
         padding-left: 20px;
-        font-size: 1.4em;
+        font-size: 1.5em;
         font-weight: 100;
         color: white;
+        background-color: var(--colorAzul);
+        height: auto;
+        border-radius: 0 0 20px 0;
+        text-shadow: -2px 2px 2px var(--colorHeader);
     }
 
     header nav {
-        padding: 5px;
+        /* padding: 5px; */
         margin: 5px;
     }
 
         header nav ul{
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
-            height: 40px;
+            justify-content: space-evenly;
+            height: auto;
         }
 
             header nav ul li{
@@ -69,7 +75,7 @@ header {
             }
 
 main {
-    padding: 70px 20px 20px 20px;
+    padding: 25% 5% 5% 5%;
 }
 
 .container-sobre-mi {
@@ -88,7 +94,7 @@ main {
         border-radius: 50%;
         width: 150px;
         height: 150px;
-        filter: drop-shadow(0 0 10px var(--colorRosa));
+        filter: drop-shadow(0 0 10px var(--colorAzul));
     }
 
     .container-sobre-mi .image h2 {
@@ -105,7 +111,7 @@ main {
         .container-sobre-mi .sobre-mi h2 {
             font-size: 1.5em;
             font-weight: 100;
-            border-bottom: 2px solid var(--colorRosa);
+            border-bottom: 2px solid var(--colorAzul);
             margin-top: 20px;
         }
 
@@ -134,7 +140,7 @@ main {
         .container-educacion .educacion-curso h2 {
             font-size: 1.5em;
             font-weight: 100;
-            border-bottom: 3px solid var(--colorRosa);
+            border-bottom: 3px solid var(--colorAzul);
             text-align: center;
         }
 
@@ -158,7 +164,7 @@ main {
     .container-tecnologias h2 {
         font-size: 1.5em;
         font-weight: 100;
-        border-bottom: 3px solid var(--colorRosa);
+        border-bottom: 3px solid var(--colorAzul);
         width: 50%;
         margin-left: 25%;
     }
@@ -189,6 +195,65 @@ main {
             transition: .5s;
         }
 
+.container-certificados {
+    margin-top: 10em;
+    text-align: center;
+}
+
+    .container-certificados h2 {
+        font-size: 1.5em;
+        font-weight: 100;
+        border-bottom: 3px solid var(--colorAzul);
+        width: 50%;
+        margin-left: 25%;
+        margin-bottom: 2rem;
+    }
+
+    .container-certificados .contenedor-imagenes-certificador {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+        /* background-color: var(--colorHeader); */
+    }
+
+        .container-certificados .contenedor-imagenes-certificador .sliders {
+            width: 1000%;
+            height: 100%;
+            display: flex;
+        }
+
+            .container-certificados .contenedor-imagenes-certificador .sliders .slider-section {
+                width: calc(100% / 10);
+                height: 100%;
+                margin: 6px;
+            }
+
+                .container-certificados .contenedor-imagenes-certificador .sliders .slider-section img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    user-select: none;
+                    border-radius: 15px;
+                }
+
+/* botones certificados */
+#btn-left,
+#btn-right {
+    transform: translate(0, 60%);
+    background-color: transparent;
+    border-radius: 50%;
+    font-size: 3rem;
+    margin: 0 40px 0 40px;
+    padding: 1px;
+    cursor: pointer;
+    background-color: var(--colorAzul);
+    color: var(--colorHeader);
+    transition: .5s ease;
+    user-select: none;
+}
+
 .container-proyectos {
     margin-top: 15em;
     text-align: center;
@@ -197,7 +262,7 @@ main {
     .container-proyectos h2 {
         font-size: 1.5em;
         font-weight: 100;
-        border-bottom: 3px solid var(--colorRosa);
+        border-bottom: 3px solid var(--colorAzul);
         width: 50%;
         margin-left: 25%;
         margin-bottom: 2rem;
@@ -218,7 +283,7 @@ main {
             left: 0;
             width: 100%;
             height: 3px;
-            background: linear-gradient(to right, transparent, var(--colorRosa));
+            background: linear-gradient(to right, transparent, var(--colorAzul));
             animation: animar_1 2s linear infinite;
         }
 
@@ -238,7 +303,7 @@ main {
             right: 0;
             width: 3px;
             height: 100%;
-            background: linear-gradient(to bottom, transparent, var(--colorRosa));
+            background: linear-gradient(to bottom, transparent, var(--colorAzul));
             animation: animar_2 2s linear infinite;
             animation-delay: 1s;
         }
@@ -259,7 +324,7 @@ main {
             left: 0;
             width: 100%;
             height: 3px;
-            background: linear-gradient(to left, transparent, var(--colorRosa));
+            background: linear-gradient(to left, transparent, var(--colorAzul));
             animation: animar_3 2s linear infinite;
         }
     
@@ -279,7 +344,7 @@ main {
             left: 0;
             width: 3px;
             height: 100%;
-            background: linear-gradient(to top, transparent, var(--colorRosa));
+            background: linear-gradient(to top, transparent, var(--colorAzul));
             animation: animar_4 2s linear infinite;
             animation-delay: 1s;
         }
@@ -327,7 +392,7 @@ main {
     .container-contacto h2 {
         font-size: 1.5em;
         font-weight: 100;
-        border-bottom: 3px solid var(--colorRosa);
+        border-bottom: 3px solid var(--colorAzul);
         width: 50%;
         margin-left: 25%;
     }
@@ -358,7 +423,7 @@ main {
     bottom: 100px; /* Espacio desde el borde inferior */
     right: 20px; /* Espacio desde el borde derecho */
     border-radius: 50%;
-    background-color: var(--colorRosa);
+    background-color: var(--colorAzul);
     color: var(--colorHeader);
     cursor: pointer;
     font-size: 3em;
@@ -366,6 +431,7 @@ main {
     width: auto;
     height: auto;
     transition: .5s;
+    padding: 1px;
 }
 
 .footer {
@@ -398,7 +464,7 @@ main {
     
         header h1 {
             padding-left: 20px;
-            font-size: 1.8em;
+            font-size: 2em;
             font-weight: 100;
             color: white;
         }
@@ -411,7 +477,7 @@ main {
             header nav ul{
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-around;
+                justify-content: space-evenly;
                 align-content: center;
                 height: 40px;
             }
@@ -419,11 +485,15 @@ main {
                 header nav ul li{
                     padding: 8px;
                     color: white;
-                    font-size: 1.2em;
+                    font-size: 1.5em;
                     transition: .5s;
                     cursor: pointer;
                 }
-
+    
+    main {
+        padding: 10% 5% 5% 5%;
+    }
+    
     .container-sobre-mi {
         display: flex;
         align-items: center;
@@ -438,7 +508,7 @@ main {
             border-radius: 50%;
             width: 200px;
             height: 200px;
-            filter: drop-shadow(0 0 10px var(--colorRosa));
+            filter: drop-shadow(0 0 10px var(--colorAzul));
         }
     
         .container-sobre-mi .image h2 {
@@ -455,7 +525,7 @@ main {
             .container-sobre-mi .sobre-mi h2 {
                 font-size: 2em;
                 font-weight: 100;
-                border-bottom: 2px solid var(--colorRosa);
+                border-bottom: 2px solid var(--colorAzul);
                 margin-top: 20px;
             }
     
@@ -484,7 +554,7 @@ main {
             .container-educacion .educacion-curso h2 {
                 font-size: 2.8em;
                 font-weight: 100;
-                border-bottom: 3px solid var(--colorRosa);
+                border-bottom: 3px solid var(--colorAzul);
                 text-align: center;
             }
         
@@ -509,7 +579,7 @@ main {
         .container-tecnologias h2 {
             font-size: 2.8em;
             font-weight: 100;
-            border-bottom: 3px solid var(--colorRosa);
+            border-bottom: 3px solid var(--colorAzul);
             width: 50%;
             margin-left: 25%;
         }
@@ -539,13 +609,67 @@ main {
                 padding: auto;
                 transition: .5s;
             }
-        
-            .container-tecnologias .image-tecno div:hover .nombre, .container-tecnologias .image-tecno div:hover .imagen{
-                filter: drop-shadow(0 0 10px var(--colorRosa));
-                opacity: 1;
-                transition: .5s;
+    
+    .container-certificados {
+        margin-top: 18em;
+        text-align: center;
+    }
+    
+        .container-certificados h2 {
+            font-size: 2.8em;
+            font-weight: 100;
+            border-bottom: 3px solid var(--colorAzul);
+            width: 50%;
+            margin-left: 25%;
+            /* margin-bottom: 2rem; */
+        }
+    
+        .container-certificados .contenedor-imagenes-certificador {
+            position: relative;
+            width: 90%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-left: 5%;
+            /* background-color: var(--colorHeader); */
+        }
+    
+            .container-certificados .contenedor-imagenes-certificador .sliders {
+                width: 1000%;
+                height: 100%;
+                display: flex;
             }
     
+                .container-certificados .contenedor-imagenes-certificador .sliders .slider-section {
+                    width: calc(100% / 10);
+                    height: 100%;
+                    margin: 6px;
+                }
+    
+                    .container-certificados .contenedor-imagenes-certificador .sliders .slider-section img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        user-select: none;
+                        border-radius: 15px;
+                    }
+    
+    /* botones certificados */
+    #btn-left,
+    #btn-right {
+        transform: translate(0, 60%);
+        background-color: transparent;
+        border-radius: 50%;
+        font-size: 5em;
+        margin: 0 10% 0 10%;
+        cursor: pointer;
+        background-color: var(--colorAzul);
+        color: var(--colorHeader);
+        transition: .5s ease;
+        user-select: none;
+    }
+
+
     .container-proyectos {
         margin-top: 25em;
         text-align: center;
@@ -554,7 +678,7 @@ main {
         .container-proyectos h2 {
             font-size: 2.8em;
             font-weight: 100;
-            border-bottom: 3px solid var(--colorRosa);
+            border-bottom: 3px solid var(--colorAzul);
             width: 50%;
             margin-left: 25%;
         }
@@ -566,9 +690,9 @@ main {
             align-items: center;
             overflow: hidden;
             margin-top: 20px;
-            width: 80%;
+            width: 90%;
             height: auto;
-            margin-left: 10%;
+            margin-left: 5%;
         }
     
             .container-proyectos .proyecto a {
@@ -589,13 +713,9 @@ main {
             }
     
             .container-proyectos .proyecto p{
-                font-size: 1em;
+                font-size: 1.4em;
                 padding-left: 20px;
                 text-align: start;
-            }
-    
-            .container-proyectos .proyecto a:hover {
-                filter: drop-shadow(0 0 10px var(--colorRosa));
             }
 
     .container-contacto {
@@ -607,7 +727,7 @@ main {
         .container-contacto h2 {
             font-size: 2.8em;
             font-weight: 100;
-            border-bottom: 3px solid var(--colorRosa);
+            border-bottom: 3px solid var(--colorAzul);
         }
     
         .container-contacto div {
@@ -624,14 +744,9 @@ main {
                 height: 50px;
                 transition: .5s;
             }
-    
-            .container-contacto div a:hover {
-                filter: drop-shadow(0 0 10px var(--colorRosa));
-                transition: .5s;
-            }
 
                 .container-contacto div a img {
-                    height: 60px;
+                    height: 70px;
                     transition: .5s;
                 }
 
@@ -641,21 +756,15 @@ main {
         bottom: 20px; /* Espacio desde el borde inferior */
         right: 20px; /* Espacio desde el borde derecho */
         border-radius: 50%;
-        background-color: var(--colorRosa);
+        background-color: var(--colorAzul);
         color: var(--colorHeader);
         cursor: pointer;
-        font-size: 4em;
+        font-size: 5em;
         z-index: 1000; /* Asegura que esté sobre otros elementos */
         width: auto;
         height: auto;
         transition: .5s;
     }
-    
-        #btn-para-arriba:hover {
-            filter: drop-shadow(0 0 10px var(--colorRosa));
-            transition: .5s;
-        }
-    
             
     .footer {
         width: 100%;
@@ -677,6 +786,7 @@ main {
     header {
         position: fixed;
         width: 100%;
+        height: auto;
         background-color: var(--colorHeader);
         display: flex;
         justify-content: space-between;
@@ -689,9 +799,12 @@ main {
     
         header h1 {
             padding-left: 30px;
-            font-size: 2.8em;
+            padding-top: 25px;
+            font-size: 3em;
             font-weight: 100;
             color: white;
+            height: 6.8rem;
+            width: 30%;
         }
     
         header nav {
@@ -714,13 +827,13 @@ main {
                 }
     
                 header nav ul li:hover{
-                    color: rgb(232, 141, 220);
+                    color: rgba(129, 162, 247, 0.729);
                     transition: .5s;
                     cursor: pointer;
                 }
     
     main {
-        padding: 120px 50px 50px 50px;
+        padding: 8% 3% 3% 3%;
     }
     
         .container-sobre-mi {
@@ -736,7 +849,7 @@ main {
                 border-radius: 50%;
                 width: 400px;
                 height: 400px;
-                filter: drop-shadow(0 0 10px var(--colorRosa));
+                filter: drop-shadow(0 0 10px var(--colorAzul));
             }
     
             .container-sobre-mi .image h2 {
@@ -753,7 +866,7 @@ main {
             .container-sobre-mi .sobre-mi h2 {
                 font-size: 3em;
                 font-weight: 100;
-                border-bottom: 3px solid var(--colorRosa);
+                border-bottom: 3px solid var(--colorAzul);
                 margin-top: 0px;
             }
     
@@ -782,7 +895,7 @@ main {
             .container-educacion .educacion-curso h2 {
                 font-size: 3em;
                 font-weight: 100;
-                border-bottom: 3px solid var(--colorRosa);
+                border-bottom: 3px solid var(--colorAzul);
                 text-align: center;
             }
         
@@ -807,7 +920,7 @@ main {
         .container-tecnologias h2 {
             font-size: 3em;
             font-weight: 100;
-            border-bottom: 3px solid var(--colorRosa);
+            border-bottom: 3px solid var(--colorAzul);
             width: 50%;
             margin-left: 25%;
         }
@@ -839,11 +952,75 @@ main {
             }
         
             .container-tecnologias .image-tecno div:hover .nombre, .container-tecnologias .image-tecno div:hover .imagen{
-                filter: drop-shadow(0 0 10px var(--colorRosa));
+                filter: drop-shadow(0 0 10px var(--colorAzul));
                 opacity: 1;
                 transition: .5s;
             }
     
+    .container-certificados {
+        margin-top: 18em;
+        text-align: center;
+    }
+    
+        .container-certificados h2 {
+            font-size: 3em;
+            font-weight: 100;
+            border-bottom: 3px solid var(--colorAzul);
+            width: 50%;
+            margin-left: 25%;
+            /* margin-bottom: 2rem; */
+        }
+    
+        .container-certificados .contenedor-imagenes-certificador {
+            position: relative;
+            width: 80%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+            margin-left: 10%;
+        }
+    
+            .container-certificados .contenedor-imagenes-certificador .sliders {
+                width: 335%;
+                height: 100%;
+                display: flex;
+            }
+    
+                .container-certificados .contenedor-imagenes-certificador .sliders .slider-section {
+                    width: calc(100% / 10);
+                    height: 100%;
+                    margin: 6px;
+                }
+    
+                    .container-certificados .contenedor-imagenes-certificador .sliders .slider-section img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        user-select: none;
+                        border-radius: 15px;
+                    }
+    
+    /* botones certificados */
+    #btn-left,
+    #btn-right {
+        transform: translate(0, 60%);
+        background-color: transparent;
+        border-radius: 50%;
+        font-size: 4em;
+        margin: 0 10% 0 10%;
+        cursor: pointer;
+        background-color: var(--colorAzul);
+        color: var(--colorHeader);
+        transition: .5s ease;
+        user-select: none;
+    }
+
+    #btn-left:hover,
+    #btn-right:hover {
+        filter: drop-shadow(0 0 10px var(--colorAzul));
+        transition: .5s;
+    }
+
     .container-proyectos {
         margin-top: 25em;
         text-align: center;
@@ -852,7 +1029,7 @@ main {
         .container-proyectos h2 {
             font-size: 3em;
             font-weight: 100;
-            border-bottom: 3px solid var(--colorRosa);
+            border-bottom: 3px solid var(--colorAzul);
             width: 50%;
             margin-left: 25%;
             margin-bottom: 3rem;
@@ -896,7 +1073,7 @@ main {
             }
     
             .container-proyectos .proyecto:hover {
-                filter: drop-shadow(0 0 10px var(--colorRosa));
+                filter: drop-shadow(0 0 10px var(--colorAzul));
                 transition: .5s;
             }
     
@@ -909,7 +1086,7 @@ main {
         .container-contacto h2 {
             font-size: 3em;
             font-weight: 100;
-            border-bottom: 3px solid var(--colorRosa);
+            border-bottom: 3px solid var(--colorAzul);
         }
     
         .container-contacto div {
@@ -928,12 +1105,12 @@ main {
             }
     
             .container-contacto div a:hover {
-                filter: drop-shadow(0 0 10px var(--colorRosa));
+                filter: drop-shadow(0 0 10px var(--colorAzul));
                 transition: .5s;
             }
 
                 .container-contacto div a img {
-                    height: 60px;
+                    height: 70px;
                     transition: .5s;
                 }
     
@@ -944,7 +1121,7 @@ main {
         bottom: 20px; /* Espacio desde el borde inferior */
         right: 20px; /* Espacio desde el borde derecho */
         border-radius: 50%;
-        background-color: var(--colorRosa);
+        background-color: var(--colorAzul);
         color: var(--colorHeader);
         cursor: pointer;
         font-size: 4em;
@@ -955,7 +1132,7 @@ main {
     }
     
         #btn-para-arriba:hover {
-            filter: drop-shadow(0 0 10px var(--colorRosa));
+            filter: drop-shadow(0 0 10px var(--colorAzul));
             transition: .5s;
         }
     
